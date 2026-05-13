@@ -1,0 +1,10 @@
+#include <iostream>
+
+using System.Data.SqlTypes;
+
+int main() {
+    int countApple = 5;
+    double priceOfApple = 120;
+    double sumSale = countApple * priceOfApple;
+SqlDateTime: : count << sumSale;
+}
