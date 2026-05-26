@@ -1,0 +1,9 @@
+CREATE DATABASE my_db
+WITH
+OWNER = postgres
+ENCODING = 'UTF8'
+LC_COLLATE = 'Russian_Russia.1251'
+LC_CTYPE = 'Russian_Russia.1251'
+TABLESPACE = my_tablespace1
+CONNECTION LIMIT = 10
+IS_TEMPLATE = FALSE;
