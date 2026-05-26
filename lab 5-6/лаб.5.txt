@@ -1,0 +1,24 @@
+!!SELECT book_ref, passenger_id, pasenger_name!!
+
+!!SELECT flight_no ,scheduled_departure, scheduled_arrival departure_airport, arrival_airport!!
+
+!!SELECT
+        departure_airport,
+	count(actual_arrival)
+  FROM bookings.flifhts;!!
+
+!!SELECT
+	flight_no,
+	scheduled_departure,
+	scheduled_arrival,
+	actual_departure,
+	actual_arrival
+FROM bookings.fligts
+WHERE departure_airport = 'DME'
+    AND actual_departure = NULL;!!
+
+!!SELECT
+	AVG(amount) AS Average,
+	SUM(amount) as Summary
+FROM bookings.ticket_flights
+WHERE fare_counditions = "Economy";	
